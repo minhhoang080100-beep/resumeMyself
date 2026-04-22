@@ -51,7 +51,7 @@ export default function Room01({ darkMode, active }) {
           className="text-sm sm:text-base leading-relaxed sm:leading-loose font-light text-center max-w-2xl px-2 sm:px-4 mb-10 sm:mb-16"
           style={{ color: darkMode ? '#A09D96' : '#666666' }}
         >
-          Anh là người thích những khoảng lặng và sự đơn giản. Thay vì những nơi
+          Anh thích những khoảng lặng và sự đơn giản. Thay vì những nơi
           ồn ào, anh thường chọn cho mình một góc yên tĩnh trong phố với một tách cà phê
           hoặc một chiếc bánh ngọt.
         </motion.p>
