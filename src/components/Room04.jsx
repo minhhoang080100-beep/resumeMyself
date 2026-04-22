@@ -18,58 +18,52 @@ export default function Room04({ darkMode, active }) {
   ]
 
   return (
-    <section className="snap-section flex flex-col items-center justify-center w-full max-w-4xl mx-auto px-4 sm:px-6" id="room-04">
-      {/* Title & Text */}
-      <motion.h2
-        custom={0} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-        className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light tracking-wide text-center"
-        style={{ color: darkMode ? '#E8E6E1' : '#333333' }}
-      >
-        Btw giới thiệu với em con báo nhà anh 🐾
-      </motion.h2>
+    <section className="snap-section" id="room-04">
+      <div className="flex flex-col items-center justify-center w-full max-w-4xl mx-auto px-4 sm:px-6">
+        {/* Title & Text */}
+        <motion.h2
+          custom={0} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
+          className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light tracking-wide text-center mt-12"
+          style={{ color: darkMode ? '#E8E6E1' : '#333333' }}
+        >
+          Btw giới thiệu với em con báo nhà anh 🐾
+        </motion.h2>
 
-      <motion.div
-        custom={1} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-        className="w-8 sm:w-12 h-px my-6 sm:my-8"
-        style={{ background: darkMode ? '#3A3835' : '#E5E3DE' }}
-      />
+        <motion.div
+          custom={1} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
+          className="w-8 sm:w-12 h-px my-6 sm:my-8"
+          style={{ background: darkMode ? '#3A3835' : '#E5E3DE' }}
+        />
 
-      {/* <motion.p
-        custom={2} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-        className="text-sm sm:text-base leading-relaxed sm:leading-loose font-light text-center max-w-lg px-2 sm:px-4 mb-8 sm:mb-12"
-        style={{ color: darkMode ? '#A09D96' : '#666666' }}
-      >
-        Btw giới thiệu với em con báo nhà anh 🐾
-      </motion.p> */}
+        {/* Cat Gallery */}
+        <motion.div
+          custom={3} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
+          className="w-full max-w-5xl"
+        >
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 px-4 sm:px-8">
+            {catImages.map((src, i) => (
+              <div
+                key={i}
+                className="flex h-[200px] sm:h-[280px] md:h-[360px] rounded-lg overflow-hidden shadow-lg border border-white/5 bg-gray-100/5"
+              >
+                <img
+                  src={`/images/my%20cat/${src}`}
+                  alt={`Con báo nhà anh ${i + 1}`}
+                  className="w-auto h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
+                />
+              </div>
+            ))}
+          </div>
+        </motion.div>
 
-      {/* Cat Gallery */}
-      <motion.div
-        custom={3} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-        className="w-full max-w-5xl"
-      >
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 px-4 sm:px-8">
-          {catImages.map((src, i) => (
-            <div
-              key={i}
-              className="flex h-[200px] sm:h-[280px] md:h-[360px] rounded-lg overflow-hidden shadow-lg border border-white/5 bg-gray-100/5"
-            >
-              <img
-                src={`/images/my%20cat/${src}`}
-                alt={`Con báo nhà anh ${i + 1}`}
-                className="w-auto h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
-              />
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <motion.p
-        custom={4} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-        className="mt-8 sm:mt-12 text-3xl sm:text-4xl md:text-5xl font-heading italic tracking-wide text-center"
-        style={{ color: darkMode ? '#D4B896' : '#C4A882' }}
-      >
-        "Xinh nhỉ!!!"
-      </motion.p>
+        <motion.p
+          custom={4} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
+          className="mt-8 sm:mt-12 text-3xl sm:text-4xl md:text-5xl font-heading italic tracking-wide text-center"
+          style={{ color: darkMode ? '#D4B896' : '#C4A882' }}
+        >
+          "Xinh nhỉ!!!"
+        </motion.p>
+      </div>
     </section>
   )
 }
