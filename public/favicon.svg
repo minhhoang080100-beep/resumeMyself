@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4B896"/>
+      <stop offset="100%" stop-color="#C4A882"/>
+    </linearGradient>
+  </defs>
+  <!-- Left ear -->
+  <path d="M12 28 L8 6 L24 20 Z" fill="url(#g)"/>
+  <!-- Right ear -->
+  <path d="M52 28 L56 6 L40 20 Z" fill="url(#g)"/>
+  <!-- Inner left ear -->
+  <path d="M14 26 L12 12 L22 21 Z" fill="#F0EFE9" opacity="0.5"/>
+  <!-- Inner right ear -->
+  <path d="M50 26 L52 12 L42 21 Z" fill="#F0EFE9" opacity="0.5"/>
+  <!-- Head -->
+  <ellipse cx="32" cy="36" rx="22" ry="20" fill="url(#g)"/>
+  <!-- Left eye -->
+  <ellipse cx="23" cy="33" rx="3.5" ry="4" fill="#333"/>
+  <ellipse cx="24" cy="32" rx="1.2" ry="1.5" fill="#fff"/>
+  <!-- Right eye -->
+  <ellipse cx="41" cy="33" rx="3.5" ry="4" fill="#333"/>
+  <ellipse cx="42" cy="32" rx="1.2" ry="1.5" fill="#fff"/>
+  <!-- Nose -->
+  <path d="M30 39 L32 42 L34 39 Z" fill="#E8A0A0" opacity="0.8"/>
+  <!-- Mouth -->
+  <path d="M32 42 Q28 46 26 44" fill="none" stroke="#333" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M32 42 Q36 46 38 44" fill="none" stroke="#333" stroke-width="0.8" stroke-linecap="round"/>
+  <!-- Whiskers left -->
+  <line x1="6" y1="36" x2="19" y2="38" stroke="#333" stroke-width="0.7" opacity="0.5"/>
+  <line x1="5" y1="40" x2="19" y2="40" stroke="#333" stroke-width="0.7" opacity="0.5"/>
+  <line x1="6" y1="44" x2="19" y2="42" stroke="#333" stroke-width="0.7" opacity="0.5"/>
+  <!-- Whiskers right -->
+  <line x1="45" y1="38" x2="58" y2="36" stroke="#333" stroke-width="0.7" opacity="0.5"/>
+  <line x1="45" y1="40" x2="59" y2="40" stroke="#333" stroke-width="0.7" opacity="0.5"/>
+  <line x1="45" y1="42" x2="58" y2="44" stroke="#333" stroke-width="0.7" opacity="0.5"/>
+</svg>
