@@ -23,7 +23,7 @@ export default function Room04({ darkMode, active }) {
         {/* Title & Text */}
         <motion.h2
           custom={0} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-          className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light tracking-wide text-center mt-12"
+          className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light tracking-wide text-center mt-6 sm:mt-10 w-full"
           style={{ color: darkMode ? '#E8E6E1' : '#333333' }}
         >
           Btw giới thiệu với em con báo nhà anh 🐾
@@ -31,34 +31,39 @@ export default function Room04({ darkMode, active }) {
 
         <motion.div
           custom={1} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-          className="w-8 sm:w-12 h-px my-6 sm:my-8"
+          className="w-8 sm:w-12 h-px my-4 sm:my-6 mx-auto"
           style={{ background: darkMode ? '#3A3835' : '#E5E3DE' }}
         />
 
         {/* Cat Gallery */}
         <motion.div
           custom={3} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-          className="w-full max-w-5xl"
+          className="w-full max-w-5xl mt-8 sm:mt-12"
         >
-          <div className="columns-2 gap-4 sm:gap-6 px-4 sm:px-8 w-full max-w-2xl mx-auto space-y-4 sm:space-y-6">
+          <div className="flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory pb-6 px-4 sm:px-8 hide-scrollbar">
             {catImages.map((src, i) => (
               <div
                 key={i}
-                className="break-inside-avoid rounded-lg overflow-hidden shadow-lg border border-white/5 bg-gray-100/5 mb-4 sm:mb-6"
+                className="snap-center shrink-0 flex h-[280px] sm:h-[360px] md:h-[420px] rounded-lg overflow-hidden shadow-lg border border-white/5 bg-gray-100/5"
               >
                 <img
                   src={`/images/my%20cat/${src}`}
                   alt={`Con báo nhà anh ${i + 1}`}
-                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700 ease-out block"
+                  className="w-auto h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
             ))}
           </div>
+
+          {/* Scroll hint */}
+          <p className="text-center text-[10px] sm:text-xs tracking-widest uppercase opacity-40 mt-2 font-light" style={{ color: darkMode ? '#A09D96' : '#999999' }}>
+            Vuốt ngang để xem thêm →
+          </p>
         </motion.div>
 
         <motion.p
           custom={4} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-          className="mt-8 sm:mt-12 text-3xl sm:text-4xl md:text-5xl font-heading italic tracking-wide text-center"
+          className="mt-6 sm:mt-8 text-3xl sm:text-4xl md:text-5xl font-heading italic tracking-wide text-center shrink-0"
           style={{ color: darkMode ? '#D4B896' : '#C4A882' }}
         >
           "Xinh nhỉ!!!"

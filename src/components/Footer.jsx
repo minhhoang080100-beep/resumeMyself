@@ -16,7 +16,7 @@ export default function Footer({ darkMode, active }) {
         />
 
         <p
-          className="text-sm sm:text-base font-light leading-relaxed max-w-sm mx-auto"
+          className="text-base sm:text-lg lg:text-xl font-light leading-relaxed max-w-md mx-auto"
           style={{ color: darkMode ? '#A09D96' : '#999999' }}
         >
           "Nếu em thấy bản Resume này đủ uy tín,
@@ -30,7 +30,7 @@ export default function Footer({ darkMode, active }) {
             style={{ background: darkMode ? '#D4B896' : '#C4A882' }}
           />
           <p
-            className="text-[9px] tracking-[0.3em] uppercase font-light"
+            className="text-xs sm:text-sm tracking-[0.3em] uppercase font-light"
             style={{ color: darkMode ? '#A09D96' : '#C4A882' }}
           >
             Fin
@@ -57,7 +57,7 @@ export default function Footer({ darkMode, active }) {
         className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 flex flex-col items-center gap-1 opacity-70 cursor-pointer"
       >
         <span
-          className="text-[10px] tracking-widest uppercase font-medium"
+          className="text-xs sm:text-sm tracking-widest uppercase font-medium"
           style={{ color: darkMode ? '#A09D96' : '#999999' }}
         >
           psst...
