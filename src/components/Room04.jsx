@@ -40,16 +40,16 @@ export default function Room04({ darkMode, active }) {
           custom={3} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
           className="w-full max-w-5xl"
         >
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 px-4 sm:px-8">
+          <div className="columns-2 gap-4 sm:gap-6 px-4 sm:px-8 w-full max-w-2xl mx-auto space-y-4 sm:space-y-6">
             {catImages.map((src, i) => (
               <div
                 key={i}
-                className="flex h-[200px] sm:h-[280px] md:h-[360px] rounded-lg overflow-hidden shadow-lg border border-white/5 bg-gray-100/5"
+                className="break-inside-avoid rounded-lg overflow-hidden shadow-lg border border-white/5 bg-gray-100/5 mb-4 sm:mb-6"
               >
                 <img
                   src={`/images/my%20cat/${src}`}
                   alt={`Con báo nhà anh ${i + 1}`}
-                  className="w-auto h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700 ease-out block"
                 />
               </div>
             ))}
