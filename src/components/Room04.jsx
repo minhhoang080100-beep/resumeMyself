@@ -67,6 +67,14 @@ export default function Room04({ darkMode, active }) {
           Vuốt ngang để xem 🐈 →
         </p>
       </motion.div>
+
+      <motion.p
+        custom={4} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
+        className="mt-8 sm:mt-12 text-3xl sm:text-4xl md:text-5xl font-heading italic tracking-wide text-center"
+        style={{ color: darkMode ? '#D4B896' : '#C4A882' }}
+      >
+        "Xinh nhỉ!!!"
+      </motion.p>
     </section>
   )
 }
