@@ -47,11 +47,11 @@ export default function Room04({ darkMode, active }) {
         custom={3} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
         className="w-full max-w-5xl"
       >
-        <div className="flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory pb-6 px-4 sm:px-8 hide-scrollbar">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 px-4 sm:px-8">
           {catImages.map((src, i) => (
             <div
               key={i}
-              className="snap-center shrink-0 flex h-[260px] sm:h-[320px] md:h-[400px] rounded-lg overflow-hidden shadow-lg border border-white/5 bg-gray-100/5"
+              className="flex h-[200px] sm:h-[280px] md:h-[360px] rounded-lg overflow-hidden shadow-lg border border-white/5 bg-gray-100/5"
             >
               <img
                 src={`/images/my%20cat/${src}`}
@@ -61,11 +61,6 @@ export default function Room04({ darkMode, active }) {
             </div>
           ))}
         </div>
-
-        {/* Scroll hint */}
-        <p className="text-center text-[10px] sm:text-xs tracking-widest uppercase opacity-40 mt-2 font-light" style={{ color: darkMode ? '#A09D96' : '#999999' }}>
-          Vuốt ngang để xem 🐈 →
-        </p>
       </motion.div>
 
       <motion.p
