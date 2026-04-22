@@ -107,15 +107,16 @@ export default function Room02({ darkMode, active }) {
             <span className="font-normal" style={{ color: darkMode ? '#D4B896' : '#C4A882' }}>
               8/1 (Ma Kết)
             </span>
-            . Trong thần số học, số chủ đạo của anh là{' '}
+            , với con số chủ đạo là{' '}
             <span
               className="font-heading text-3xl sm:text-4xl italic px-1 leading-[0.8]"
               style={{ color: darkMode ? '#D4B896' : '#C4A882' }}
             >
               11
             </span>
-            . Theo lý thuyết thì đây là con số của trực giác và sự đồng điệu.
-            Thực tế thì anh là một người hướng nội, thích quan sát hơn là nói quá nhiều.
+            . Người ta thường nói đây là con số của trực giác, nhưng với anh,
+            nó đơn giản là lý do vì sao anh thích quan sát và cảm nhận mọi thứ
+            xung quanh hơn là thể hiện qua lời nói.
           </p>
 
           {/* Tags */}

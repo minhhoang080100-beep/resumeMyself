@@ -9,7 +9,7 @@ const hobbies = [
   {
     icon: '🎧',
     title: 'Âm nhạc',
-    desc: 'Anh thích nghe nhiều dòng nhạc. 2 nhóm anh thích nhất là Big Bang và One Ok Rock',
+    desc: 'Anh nghe khá nhiều dòng nhạc, tùy vào tâm trạng. Nhưng Big Bang và One Ok Rock luôn là hai cái tên nằm trong danh sách phát thường xuyên nhất.',
   },
   {
     icon: '🥐',
