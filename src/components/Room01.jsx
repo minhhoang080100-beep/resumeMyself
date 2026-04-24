@@ -42,13 +42,13 @@ export default function Room01({ darkMode, active }) {
 
         <motion.div
           custom={2} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-          className="w-10 sm:w-12 h-px my-6 sm:my-8"
+          className="w-10 sm:w-12 h-px my-5 sm:my-6"
           style={{ background: darkMode ? '#3A3835' : '#E5E3DE' }}
         />
 
         <motion.p
           custom={3} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-          className="text-sm sm:text-base leading-relaxed sm:leading-loose font-light text-center max-w-2xl px-2 sm:px-4 mb-6 sm:mb-8"
+          className="text-sm sm:text-base leading-relaxed sm:leading-loose font-light text-center max-w-2xl px-2 sm:px-4 mb-10 sm:mb-14"
           style={{ color: darkMode ? '#A09D96' : '#666666' }}
         >
           Anh thích những khoảng lặng và sự đơn giản. Thay vì những nơi

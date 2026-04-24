@@ -197,8 +197,8 @@ export default function CroissantModal({ onClose, darkMode }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="text-center text-[10px] sm:text-xs tracking-[0.15em] uppercase mt-8 sm:mt-10 font-light"
-          style={{ color: darkMode ? '#A09D96' : '#C4A882' }}
+          className="text-center text-[9px] sm:text-[10px] tracking-[0.15em] uppercase mt-6 font-light"
+          style={{ color: darkMode ? '#3A3835' : '#E5E3DE' }}
         >
           Curated with love ♡
         </motion.p>

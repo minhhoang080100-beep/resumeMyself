@@ -6,6 +6,9 @@ const catImages = [
   { src: '/images/my%20cat/bd8395e6-8dee-4e5c-a8be-5e25c962a4f5.jpg', alt: 'Con báo nhà anh 2' },
   { src: '/images/my%20cat/be16946a-8b7e-4f71-9b66-2d9f95a391dc.jpg', alt: 'Con báo nhà anh 3' },
   { src: '/images/my%20cat/c925c79a-6b0b-49ae-bc71-3051030d6af0.jpg', alt: 'Con báo nhà anh 4' },
+  { src: '/images/my%20cat/70448657-68e9-4c00-a732-7a6bc0e5000d.jpg', alt: 'Con báo nhà anh 5' },
+  { src: '/images/my%20cat/8c728357-8cd5-4ca0-b7ce-6ffc8a56e446.jpg', alt: 'Con báo nhà anh 6' },
+  { src: '/images/my%20cat/9b8ddde1-505f-4593-9d4f-7dd91e67252d.jpg', alt: 'Con báo nhà anh 7' },
 ]
 
 export default function Room04({ darkMode, active }) {
@@ -32,7 +35,7 @@ export default function Room04({ darkMode, active }) {
 
         <motion.div
           custom={1} initial="hidden" animate={active ? 'visible' : 'hidden'} variants={fadeUp}
-          className="w-8 sm:w-12 h-px my-4 sm:my-6 mx-auto"
+          className="w-8 sm:w-12 h-px my-8 sm:my-10 mx-auto"
           style={{ background: darkMode ? '#3A3835' : '#E5E3DE' }}
         />
 

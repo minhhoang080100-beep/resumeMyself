@@ -49,31 +49,23 @@ export default function Footer({ darkMode, active }) {
         </p> */}
       </motion.div>
 
-      {/* Floating Easter Egg Hint - Bottom Center */}
+      {/* Floating Easter Egg Hint - Bottom Right */}
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+        initial={{ opacity: 0 }}
+        animate={active ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 1, delay: 1.5 }}
-        className="absolute bottom-8 sm:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer"
+        className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 flex flex-col items-center gap-1 opacity-70 cursor-pointer"
       >
-        <div
-          className="flex items-center gap-2 px-4 py-1.5 rounded-full backdrop-blur-sm"
-          style={{
-            background: darkMode ? 'rgba(212,184,150,0.1)' : 'rgba(196,168,130,0.1)',
-            border: `1px solid ${darkMode ? 'rgba(212,184,150,0.2)' : 'rgba(196,168,130,0.25)'}`,
-          }}
+        <span
+          className="text-xs sm:text-sm tracking-widest uppercase font-medium"
+          style={{ color: darkMode ? '#A09D96' : '#999999' }}
         >
-          <span
-            className="text-[10px] sm:text-xs tracking-[0.25em] uppercase font-medium"
-            style={{ color: darkMode ? '#D4B896' : '#C4A882' }}
-          >
-            psst...
-          </span>
-        </div>
+          psst...
+        </span>
         <motion.span
-          animate={{ y: [0, 5, 0] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-          className="text-lg sm:text-xl font-light"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          className="text-2xl sm:text-3xl font-light"
           style={{ color: darkMode ? '#D4B896' : '#C4A882' }}
         >
           ↓
